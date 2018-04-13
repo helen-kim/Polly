@@ -12,6 +12,8 @@
 		0FB07F512076E0A5004F437D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F4F2076E0A5004F437D /* Main.storyboard */; };
 		0FB07F532076E0A5004F437D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F522076E0A5004F437D /* Assets.xcassets */; };
 		0FB07F562076E0A5004F437D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F542076E0A5004F437D /* LaunchScreen.storyboard */; };
+		0FB07F6020794030004F437D /* slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F5F2079402F004F437D /* slider.png */; };
+		0FB07F6220794077004F437D /* capstone v1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F6120794077004F437D /* capstone v1-01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0FB07F522076E0A5004F437D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FB07F552076E0A5004F437D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FB07F572076E0A5004F437D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB07F5F2079402F004F437D /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider.png; path = ../../../../Downloads/slider.png; sourceTree = "<group>"; };
+		0FB07F6120794077004F437D /* capstone v1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "capstone v1-01.png"; path = "../../../../Downloads/capstone v1-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		0FB07F4A2076E0A5004F437D /* Polly */ = {
 			isa = PBXGroup;
 			children = (
+				0FB07F5E20794022004F437D /* Image Assets */,
 				0FB07F4B2076E0A5004F437D /* AppDelegate.swift */,
 				0FB07F4D2076E0A5004F437D /* ViewController.swift */,
 				0FB07F4F2076E0A5004F437D /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				0FB07F572076E0A5004F437D /* Info.plist */,
 			);
 			path = Polly;
+			sourceTree = "<group>";
+		};
+		0FB07F5E20794022004F437D /* Image Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0FB07F5F2079402F004F437D /* slider.png */,
+				0FB07F6120794077004F437D /* capstone v1-01.png */,
+			);
+			path = "Image Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB07F6020794030004F437D /* slider.png in Resources */,
 				0FB07F562076E0A5004F437D /* LaunchScreen.storyboard in Resources */,
+				0FB07F6220794077004F437D /* capstone v1-01.png in Resources */,
 				0FB07F532076E0A5004F437D /* Assets.xcassets in Resources */,
 				0FB07F512076E0A5004F437D /* Main.storyboard in Resources */,
 			);
