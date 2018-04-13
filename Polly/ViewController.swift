@@ -8,34 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+
+    @IBOutlet weak var langField: UITextField!
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
+    let languages = ["English", "Spanish", "Korean", "Chinese", "Arabic"]
     
-    var contentWidth:CGFloat = 0.0
+    var pickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.delegate = self
+        pickerView.delegate = self
+        pickerView.dataSource = self
         
-        for image in 0...2 {
-            let imageToDisplay = UIImage(named: "\(image).png")
-            let imageView = UIImageView(image: imageToDisplay)
-            
-            let xCoordinate = view.frame.midX + view.frame.width * CGFloat(image)
-            contentWidth += view.frame.width
-            scrollView.addSubview(imageView)
-            imageView.frame = CGRect(x: xCoordinate - 50, y: (view.frame.height / 2) + 50, width: 100, height: 100)
-        }
+        langField.inputView = pickerView
+        langField.textAlignment = .center
+        langField.placeholder = "Select Language"
         
-        scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.height)
+        
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        pageControl.currentPage = Int(scrollView.contentOffset.x / CGFloat(414))
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return languages.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return languages[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
+        langField.text = languages[row]
+        langField.resignFirstResponder()
     }
     
     override func didReceiveMemoryWarning() {
