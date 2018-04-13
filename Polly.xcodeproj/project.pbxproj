@@ -24,8 +24,8 @@
 		0FB07F522076E0A5004F437D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FB07F552076E0A5004F437D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FB07F572076E0A5004F437D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FB07F5F2079402F004F437D /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider.png; path = ../../../../Downloads/slider.png; sourceTree = "<group>"; };
-		0FB07F6120794077004F437D /* capstone v1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "capstone v1-01.png"; path = "../../../../Downloads/capstone v1-01.png"; sourceTree = "<group>"; };
+		0FB07F5F2079402F004F437D /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider.png; sourceTree = "<group>"; };
+		0FB07F6120794077004F437D /* capstone v1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capstone v1-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
