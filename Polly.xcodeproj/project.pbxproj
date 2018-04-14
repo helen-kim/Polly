@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F6585A5208269F2006F17F4 /* continue_inac.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6585A3208269F1006F17F4 /* continue_inac.png */; };
+		0F6585A6208269F2006F17F4 /* continue_ac.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6585A4208269F2006F17F4 /* continue_ac.png */; };
 		0FB07F4C2076E0A5004F437D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB07F4B2076E0A5004F437D /* AppDelegate.swift */; };
 		0FB07F4E2076E0A5004F437D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB07F4D2076E0A5004F437D /* ViewController.swift */; };
 		0FB07F512076E0A5004F437D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F4F2076E0A5004F437D /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F6585A3208269F1006F17F4 /* continue_inac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = continue_inac.png; sourceTree = "<group>"; };
+		0F6585A4208269F2006F17F4 /* continue_ac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = continue_ac.png; sourceTree = "<group>"; };
 		0FB07F482076E0A5004F437D /* Polly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB07F4B2076E0A5004F437D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FB07F4D2076E0A5004F437D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		0FB07F5E20794022004F437D /* Image Assets */ = {
 			isa = PBXGroup;
 			children = (
+				0F6585A4208269F2006F17F4 /* continue_ac.png */,
+				0F6585A3208269F1006F17F4 /* continue_inac.png */,
 				0FB07F5F2079402F004F437D /* slider.png */,
 				0FB07F6120794077004F437D /* capstone v1-01.png */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB07F6020794030004F437D /* slider.png in Resources */,
+				0F6585A5208269F2006F17F4 /* continue_inac.png in Resources */,
 				0FB07F562076E0A5004F437D /* LaunchScreen.storyboard in Resources */,
+				0F6585A6208269F2006F17F4 /* continue_ac.png in Resources */,
 				0FB07F6220794077004F437D /* capstone v1-01.png in Resources */,
 				0FB07F532076E0A5004F437D /* Assets.xcassets in Resources */,
 				0FB07F512076E0A5004F437D /* Main.storyboard in Resources */,

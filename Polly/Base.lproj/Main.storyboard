@@ -136,31 +136,33 @@
                                     <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="POLLY" id="5vb-wj-epF">
-                                        <barButtonItem key="leftBarButtonItem" title="BACK" id="23c-SG-E1J">
-                                            <color key="tintColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <segue destination="gJi-QL-Mnn" kind="show" animates="NO" id="qgf-nL-zbQ"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="POLLY" id="5vb-wj-epF"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="5TZ-oN-lfK"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6Ka-A9-CnG" appends="YES" id="dXQ-YZ-Fem"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ebt-il-gGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="6Ka-A9-CnG">
+                    <connections>
+                        <segue destination="gJi-QL-Mnn" kind="show" id="5dW-D6-ukP"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="940" y="-707"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eed-WB-WE8">
             <objects>
-                <viewController id="Hgc-Lf-wQK" sceneMemberID="viewController">
+                <viewController id="Hgc-Lf-wQK" customClass="ViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yG3-BU-d2t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,18 +175,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBV-JO-5w5">
-                                <rect key="frame" x="86" y="380" width="202" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5725490196078431" green="0.87450980392156863" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ARQ-W8-aZf" kind="show" animates="NO" id="17l-nR-UgE"/>
-                                </connections>
-                            </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxJ-yc-7Dk">
                                 <rect key="frame" x="0.0" y="608" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -198,6 +188,18 @@
                                 <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBV-JO-5w5">
+                                <rect key="frame" x="78" y="384" width="218" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5725490196078431" green="0.87450980392156863" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="continue_inac.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ARQ-W8-aZf" kind="show" animates="NO" id="17l-nR-UgE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BhI-dZ-KMf"/>
@@ -422,8 +424,10 @@
     </scenes>
     <resources>
         <image name="capstone v1-01.png" width="1652" height="1652"/>
+        <image name="continue_inac.png" width="210" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="17l-nR-UgE"/>
         <segue reference="70G-nJ-tvk"/>
         <segue reference="Ibp-S1-CBI"/>
     </inferredMetricsTieBreakers>
