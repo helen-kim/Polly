@@ -9,6 +9,14 @@
 import UIKit
 
 class PageCell: UICollectionViewCell {
+    
+    let crashCourseImageView: UIImageView = {
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .purple

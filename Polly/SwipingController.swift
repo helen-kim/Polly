@@ -14,7 +14,7 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         super.viewDidLoad()
         
         collectionView?.backgroundColor = .white
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
+        collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
         
         collectionView?.isPagingEnabled = true
     }
@@ -35,7 +35,7 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
 //        let imageView = UIImageView()
 //        cell.addSubview(imageView)
         
-        cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .white
+//        cell.backgroundColor = indexPath.item % 2 == 0 ? .red : .white
         return cell
     }
     

@@ -12,6 +12,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBOutlet weak var langField: UITextField!
     
+    let crashCourseImageView: UIImageView = {
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
+        // this enables autolayout for our imageview
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
     let languages = ["English", "Spanish", "Korean", "Chinese", "Arabic"]
     
     var pickerView = UIPickerView()
@@ -25,6 +33,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         langField.inputView = pickerView
         langField.textAlignment = .center
         langField.placeholder = "Select Language"
+        
         
         
     }

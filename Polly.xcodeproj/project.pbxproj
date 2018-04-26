@@ -78,8 +78,8 @@
 		0FB07F5E20794022004F437D /* Image Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0FB07F5F2079402F004F437D /* slider.png */,
 				0FB07F6120794077004F437D /* capstone v1-01.png */,
+				0FB07F5F2079402F004F437D /* slider.png */,
 			);
 			path = "Image Assets";
 			sourceTree = "<group>";
