@@ -84,7 +84,7 @@
                                 <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-6U-ILU">
-                                <rect key="frame" x="23" y="174" width="154" height="142"/>
+                                <rect key="frame" x="23" y="123" width="154" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.55686274509803924" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -96,7 +96,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0r-43-DMJ">
-                                <rect key="frame" x="202" y="174" width="150" height="142"/>
+                                <rect key="frame" x="202" y="123" width="150" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85490196078431369" green="0.92941176470588238" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -105,7 +105,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ND-80-F4B">
-                                <rect key="frame" x="23" y="339" width="154" height="144"/>
+                                <rect key="frame" x="23" y="288" width="154" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.86274509803921573" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Resources">
@@ -116,7 +116,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCg-LL-gRJ">
-                                <rect key="frame" x="202" y="339" width="150" height="144"/>
+                                <rect key="frame" x="202" y="288" width="150" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.5725490196078431" green="0.87450980392156863" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Profiles">
@@ -142,7 +142,7 @@
             </objects>
             <point key="canvasLocation" x="940" y="-707"/>
         </scene>
-        <!--Language Services-->
+        <!--Translation Services-->
         <scene sceneID="eed-WB-WE8">
             <objects>
                 <viewController id="Hgc-Lf-wQK" sceneMemberID="viewController">
@@ -151,11 +151,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-4H-3xc">
-                                <rect key="frame" x="28" y="195" width="318" height="146"/>
+                                <rect key="frame" x="40" y="175" width="295" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Welcome to our Language Interpretation Services! Remember, you have the right to non-discriminant health care, and that includes access to a professional medical translator at any time to ensure the quality of your care.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Remember that you have the right to non-discriminant health care at all times. That includes the right to request a professional medical translator to always ensure the quality of your care.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to  Translation Services!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-OB-bGC">
+                                <rect key="frame" x="40" y="112" width="295" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.17647058823529413" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxJ-yc-7Dk">
@@ -171,28 +178,86 @@
                                 <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBV-JO-5w5">
-                                <rect key="frame" x="78" y="384" width="218" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaF-Jj-DFy">
+                                <rect key="frame" x="40" y="308" width="105" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" image="continue_inac.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.92941176469999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Find out more">
+                                    <color key="titleColor" red="0.0" green="0.14117647058823529" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ARQ-W8-aZf" kind="show" animates="NO" id="17l-nR-UgE"/>
+                                    <segue destination="sIW-sf-gBM" kind="presentation" id="bXd-1d-3G0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTT-te-Vr9">
+                                <rect key="frame" x="82" y="462" width="210" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57254901960000004" green="0.87450980389999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.14117647058823529" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ARQ-W8-aZf" kind="show" id="ULf-AJ-Ac5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BhI-dZ-KMf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Language Services" id="csQ-O3-Td5">
+                    <navigationItem key="navigationItem" title="Translation Services" id="csQ-O3-Td5">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Hk3-vu-VUa"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0NU-gb-b8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1752.8" y="-707.49625187406298"/>
+        </scene>
+        <!--Info Popup View Controller-->
+        <scene sceneID="4NE-ug-iGo">
+            <objects>
+                <viewController id="sIW-sf-gBM" customClass="InfoPopupViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="haU-vf-ClO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLu-LA-M55">
+                                <rect key="frame" x="7" y="64" width="360" height="539"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLf-yF-qcP">
+                                        <rect key="frame" x="23" y="74" width="315" height="317"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">Title VI of the U.S. Civil Rights Law of 1964 has been interpreted to prohibit hospitals, physicians, and other healthcare providers receiving “federal financial assistance” from discriminating against patients who do not speak English. The U.S. Department of Health and Human Services (HHS) published a list of the types of federal financial assistance to which Title VI applies, which includes services reimbursed under Medicare Part A and Part B. 
+Remember that family members, especially children, may not be appropriate interpreters because they may not provide quality and accurate interpretations, and privacy and conflict of interest issues may arise.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oge-bX-QEO">
+                                        <rect key="frame" x="147" y="423" width="66" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="close"/>
+                                        <connections>
+                                            <action selector="close_TouchUpInside:" destination="sIW-sf-gBM" eventType="touchUpInside" id="Zwh-R5-jrK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.99161783849999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5YG-CM-fIR"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="oge-bX-QEO" id="TzJ-LX-D2D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yX2-gp-R66" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="-322"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="43T-qN-SPG">
@@ -216,32 +281,32 @@
                                 <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who is the Patient?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO8-uq-NwB">
-                                <rect key="frame" x="0.0" y="181" width="375" height="36"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSc-65-YTb">
-                                <rect key="frame" x="107" y="296" width="160" height="38"/>
+                                <rect key="frame" x="107" y="215" width="160" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Me"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbH-Gc-q1I">
-                                <rect key="frame" x="107" y="354" width="160" height="38"/>
+                                <rect key="frame" x="107" y="273" width="160" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="A Family Member"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFe-tt-6Fj">
-                                <rect key="frame" x="107" y="411" width="160" height="38"/>
+                                <rect key="frame" x="107" y="330" width="160" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="A Friend"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-FV-u5O">
-                                <rect key="frame" x="107" y="469" width="160" height="38"/>
+                                <rect key="frame" x="107" y="388" width="160" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.20000000000000001" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Someone Else"/>
@@ -253,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GrP-JC-ot8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2500" y="-707.49625187406298"/>
+            <point key="canvasLocation" x="2625" y="-1076"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6DC-Xh-UbL">
@@ -274,12 +339,12 @@
             </objects>
             <point key="canvasLocation" x="-138" y="-707"/>
         </scene>
-        <!--AdditionController-->
+        <!--View Controller-->
         <scene sceneID="e30-QK-UAh">
             <objects>
-                <viewController storyboardIdentifier="AdditionController" title="AdditionController" id="ORq-Ou-qcE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdditionController" id="ORq-Ou-qcE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAq-HN-MES">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capstone v1-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-GR-rUP">
@@ -301,7 +366,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="O7q-3M-mYh">
-                                <rect key="frame" x="160" y="585" width="55" height="37"/>
+                                <rect key="frame" x="160" y="477" width="55" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.85490196080000003" green="0.92941176469999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.57254901960000004" green="0.87450980389999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -335,51 +400,11 @@
             </objects>
             <point key="canvasLocation" x="10" y="81"/>
         </scene>
-        <!--Page2Controller-->
-        <scene sceneID="S96-ug-dz1">
-            <objects>
-                <viewController storyboardIdentifier="Page2Controller" title="Page2Controller" id="wMh-JC-Sea" customClass="StepOne" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DxZ-cT-pqQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="page 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gc5-g9-VT4">
-                                <rect key="frame" x="161" y="323" width="53" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="wJ3-YV-2Bb">
-                                <rect key="frame" x="168" y="585" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" red="0.85490196080000003" green="0.92941176469999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.57254901960000004" green="0.87450980389999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="GaP-h1-uWj" firstAttribute="bottom" secondItem="wJ3-YV-2Bb" secondAttribute="bottom" constant="45" id="3as-tv-C6H"/>
-                            <constraint firstItem="wJ3-YV-2Bb" firstAttribute="centerX" secondItem="DxZ-cT-pqQ" secondAttribute="centerX" id="Ba3-sh-NfH"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="GaP-h1-uWj"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="8Xf-ge-mhQ" appends="YES" id="RHb-Cl-zWQ"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="hQR-zY-x2r"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nBS-kE-Hcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="8Xf-ge-mhQ"/>
-            </objects>
-            <point key="canvasLocation" x="1753" y="81"/>
-        </scene>
     </scenes>
     <resources>
         <image name="capstone v1-01.png" width="1652" height="1652"/>
-        <image name="continue_inac.png" width="210" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nsm-4B-Oeq"/>
+        <segue reference="70G-nJ-tvk"/>
     </inferredMetricsTieBreakers>
 </document>
