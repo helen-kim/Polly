@@ -301,7 +301,7 @@
 		0FB07F5B2076E0A5004F437D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4FU32943A;
 				INFOPLIST_FILE = Polly/Info.plist;
@@ -316,7 +316,7 @@
 		0FB07F5C2076E0A5004F437D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4FU32943A;
 				INFOPLIST_FILE = Polly/Info.plist;
