@@ -5,7 +5,6 @@
 //  Created by Sophie Zhao on 4/15/18.
 //  Copyright © 2018 translators. All rights reserved.
 //
-
 import UIKit
 
 class SwipingController: UICollectionViewController, UICollectionViewDelegateFlowLayout {

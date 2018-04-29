@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         return imageView
     }()
     
-    let languages = ["English", "Spanish", "Korean", "Chinese", "Arabic"]
+    let languages = ["", "English", "Spanish", "Korean", "Chinese", "Arabic"]
     
     var pickerView = UIPickerView()
     
