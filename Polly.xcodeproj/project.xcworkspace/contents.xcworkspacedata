@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Polly">
+   </FileRef>
+   <FileRef
       location = "self:Polly.xcodeproj">
    </FileRef>
 </Workspace>
