@@ -12,14 +12,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBOutlet weak var langField: UITextField!
     
-    let crashCourseImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
-        // this enables autolayout for our imageview
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-    
     let languages = ["", "English", "Spanish", "Korean", "Chinese", "Arabic"]
     
     var pickerView = UIPickerView()
@@ -35,9 +27,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         langField.placeholder = "Select Language"
         
         // here's our entry point into our app
-        
-        
-        
+
     }
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -62,7 +52,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }
 

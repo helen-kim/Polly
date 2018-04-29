@@ -17,6 +17,7 @@
 		0FB07F562076E0A5004F437D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F542076E0A5004F437D /* LaunchScreen.storyboard */; };
 		0FB07F6020794030004F437D /* slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F5F2079402F004F437D /* slider.png */; };
 		0FB07F6220794077004F437D /* capstone v1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F6120794077004F437D /* capstone v1-01.png */; };
+		EA2B0559209652A600F20A0A /* CrashCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0558209652A600F20A0A /* CrashCourseViewController.swift */; };
 		EA3DBB332083DE86002D39FC /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB322083DE86002D39FC /* SwipingController.swift */; };
 		EA3DBB352083E465002D39FC /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB342083E465002D39FC /* PageCell.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		0FB07F572076E0A5004F437D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FB07F5F2079402F004F437D /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider.png; sourceTree = "<group>"; };
 		0FB07F6120794077004F437D /* capstone v1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capstone v1-01.png"; sourceTree = "<group>"; };
+		EA2B0558209652A600F20A0A /* CrashCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashCourseViewController.swift; sourceTree = "<group>"; };
 		EA3DBB322083DE86002D39FC /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		EA3DBB342083E465002D39FC /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				0FB07F4B2076E0A5004F437D /* AppDelegate.swift */,
 				EA3DBB342083E465002D39FC /* PageCell.swift */,
 				0FB07F4D2076E0A5004F437D /* ViewController.swift */,
+				EA2B0558209652A600F20A0A /* CrashCourseViewController.swift */,
 				0FB07F4F2076E0A5004F437D /* Main.storyboard */,
 				0FB07F522076E0A5004F437D /* Assets.xcassets */,
 				0FB07F542076E0A5004F437D /* LaunchScreen.storyboard */,
@@ -87,7 +90,6 @@
 			children = (
 				0F6585A4208269F2006F17F4 /* continue_ac.png */,
 				0F6585A3208269F1006F17F4 /* continue_inac.png */,
-				0FB07F5F2079402F004F437D /* slider.png */,
 				0FB07F6120794077004F437D /* capstone v1-01.png */,
 				0FB07F5F2079402F004F437D /* slider.png */,
 			);
@@ -175,6 +177,7 @@
 				0FB07F4C2076E0A5004F437D /* AppDelegate.swift in Sources */,
 				EA3DBB352083E465002D39FC /* PageCell.swift in Sources */,
 				EA3DBB332083DE86002D39FC /* SwipingController.swift in Sources */,
+				EA2B0559209652A600F20A0A /* CrashCourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

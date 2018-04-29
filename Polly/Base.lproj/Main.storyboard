@@ -345,12 +345,12 @@ Remember that family members, especially children, may not be appropriate interp
             </objects>
             <point key="canvasLocation" x="-138" y="-707"/>
         </scene>
-        <!--View Controller-->
+        <!--Crash Course View Controller-->
         <scene sceneID="e30-QK-UAh">
             <objects>
-                <viewController storyboardIdentifier="AdditionController" id="ORq-Ou-qcE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdditionController" id="ORq-Ou-qcE" customClass="CrashCourseViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAq-HN-MES">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capstone v1-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-GR-rUP">
@@ -372,7 +372,7 @@ Remember that family members, especially children, may not be appropriate interp
                                 <nil key="highlightedColor"/>
                             </label>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="O7q-3M-mYh">
-                                <rect key="frame" x="160" y="477" width="55" height="37"/>
+                                <rect key="frame" x="160" y="585" width="55" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.85490196080000003" green="0.92941176469999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.57254901960000004" green="0.87450980389999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -604,6 +604,6 @@ Remember that family members, especially children, may not be appropriate interp
         <image name="capstone v1-01.png" width="1652" height="1652"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="70G-nJ-tvk"/>
+        <segue reference="Nsm-4B-Oeq"/>
     </inferredMetricsTieBreakers>
 </document>
