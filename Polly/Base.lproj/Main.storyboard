@@ -348,63 +348,47 @@ Remember that family members, especially children, may not be appropriate interp
         <!--Crash Course View Controller-->
         <scene sceneID="e30-QK-UAh">
             <objects>
-                <viewController storyboardIdentifier="AdditionController" id="ORq-Ou-qcE" customClass="CrashCourseViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CrashCourseViewController" id="ORq-Ou-qcE" customClass="CrashCourseViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAq-HN-MES">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capstone v1-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-GR-rUP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="369"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Oy-1Q-6sI">
+                                <rect key="frame" x="16" y="20" width="343" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An addition error occurs when the interpreter introduces superfluous information or speaks with stylistic effects." lineBreakMode="wordWrap" numberOfLines="13" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ja1-jr-U1C">
-                                <rect key="frame" x="52" y="463" width="270" height="88"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Title Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HwW-dt-paO">
+                                <rect key="frame" x="16" y="371" width="343" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Addition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-Fd-haM">
-                                <rect key="frame" x="52" y="423" width="270" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="750-RU-HuW">
+                                <rect key="frame" x="16" y="414" width="343" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="O7q-3M-mYh">
-                                <rect key="frame" x="160" y="585" width="55" height="37"/>
-                                <color key="pageIndicatorTintColor" red="0.85490196080000003" green="0.92941176469999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.57254901960000004" green="0.87450980389999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </pageControl>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="cHI-R6-rXu" firstAttribute="bottom" secondItem="O7q-3M-mYh" secondAttribute="bottom" constant="45" id="qTr-Ea-vuq"/>
-                            <constraint firstItem="O7q-3M-mYh" firstAttribute="centerX" secondItem="cAq-HN-MES" secondAttribute="centerX" id="yZp-hy-Ngy"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cHI-R6-rXu"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Ap9-g9-OiT" appends="YES" id="pdi-if-YN7"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="crashCourseImageView" destination="3Oy-1Q-6sI" id="R3G-BZ-eva"/>
+                        <outlet property="descriptionTextView" destination="750-RU-HuW" id="FVf-i8-pIr"/>
+                        <outlet property="titleTextView" destination="HwW-dt-paO" id="fay-1D-iWB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Df-5y-jSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="Ap9-g9-OiT"/>
             </objects>
-            <point key="canvasLocation" x="940" y="82"/>
-        </scene>
-        <!--CrashCoursePageController-->
-        <scene sceneID="biT-kk-jZh">
-            <objects>
-                <pageViewController storyboardIdentifier="CrashCoursePageController" autoresizesArchivedViewToFullSize="NO" title="CrashCoursePageController" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="MN5-kf-tDo" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="ORq-Ou-qcE" kind="show" id="Nsm-4B-Oeq"/>
-                    </connections>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kss-ZW-rT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10" y="81"/>
+            <point key="canvasLocation" x="940" y="81.409295352323838"/>
         </scene>
         <!--Translation Service-->
         <scene sceneID="nLO-QO-dz1">
@@ -600,10 +584,4 @@ Remember that family members, especially children, may not be appropriate interp
             <point key="canvasLocation" x="5105" y="-1076"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="capstone v1-01.png" width="1652" height="1652"/>
-    </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Nsm-4B-Oeq"/>
-    </inferredMetricsTieBreakers>
 </document>
