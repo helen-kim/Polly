@@ -17,7 +17,7 @@ import UIKit
 //}
 
 class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var otherField: UITextField!
     @IBOutlet weak var genderPicker: UIPickerView!
     @IBOutlet weak var genderButton: RoundedButton!
@@ -26,6 +26,8 @@ class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         genderPicker.isHidden = true
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_inac"), for: .normal)
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_ac"), for: .highlighted)
         
         super.viewDidLoad()
         otherField.setPadding()
