@@ -14,8 +14,8 @@ extension UIColor {
 
 class CrashCourseViewController: UIViewController {
     
-    let viewController = self.instantiateViewController(withIdentifier: "SwipingController")
-    self.window?.rootViewController = viewController
+//    let viewController = self.instantiateViewController(withIdentifier: "SwipingController")
+//    self.window?.rootViewController = viewController
     
     // let's avoid polluting viewDidLoad
     // {} is referred to as closure, or anon. functions
