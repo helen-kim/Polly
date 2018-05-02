@@ -9,16 +9,12 @@
 import UIKit
 
 extension UIColor {
-    static var mainPink = UIColor(red: 232/255, green: 68/255, blue: 133/255, alpha: 1)
+    static var blue = UIColor(red: 232/255, green: 68/255, blue: 133/255, alpha: 1)
 }
 
 class CrashCourseViewController: UIViewController {
     
-//    let viewController = self.instantiateViewController(withIdentifier: "SwipingController")
-//    self.window?.rootViewController = viewController
     
-    // let's avoid polluting viewDidLoad
-    // {} is referred to as closure, or anon. functions
     let crashCourseImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
         // this enables autolayout for our imageView
@@ -57,7 +53,7 @@ class CrashCourseViewController: UIViewController {
         button.setTitle("NEXT", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        button.setTitleColor(.mainPink, for: .normal)
+        button.setTitleColor(.blue, for: .normal)
         return button
     }()
     
@@ -65,8 +61,7 @@ class CrashCourseViewController: UIViewController {
         let pc = UIPageControl()
         pc.currentPage = 0
         pc.numberOfPages = 4
-        //        let pinkColor = UIColor(red: 232/255, green: 68/255, blue: 133/255, alpha: 1)
-        pc.currentPageIndicatorTintColor = .mainPink
+        pc.currentPageIndicatorTintColor = .blue
         pc.pageIndicatorTintColor = UIColor(red: 249/255, green: 207/255, blue: 224/255, alpha: 1)
         return pc
     }()
@@ -84,18 +79,7 @@ class CrashCourseViewController: UIViewController {
     }
     
     fileprivate func setupBottomControls() {
-        //        view.addSubview(previousButton)
-        //        previousButton.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
-        
-        //        let yellowView = UIView()
-        //        yellowView.backgroundColor = .yellow
-        
-        //        let greenView = UIView()
-        //        greenView.backgroundColor = .green
-        
-        //        let blueView = UIView()
-        //        blueView.backgroundColor = .blue
-        
+
         let bottomControlsStackView = UIStackView(arrangedSubviews: [previousButton, pageControl, nextButton])
         bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false
         bottomControlsStackView.distribution = .fillEqually

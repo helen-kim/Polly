@@ -332,26 +332,6 @@ Remember that family members, especially children, may not be appropriate interp
                     <view key="view" contentMode="scaleToFill" id="cAq-HN-MES">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Oy-1Q-6sI">
-                                <rect key="frame" x="16" y="20" width="343" height="343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Title Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HwW-dt-paO">
-                                <rect key="frame" x="16" y="371" width="343" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="750-RU-HuW">
-                                <rect key="frame" x="16" y="414" width="343" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="cHI-R6-rXu"/>
@@ -359,11 +339,6 @@ Remember that family members, especially children, may not be appropriate interp
                             <outletCollection property="gestureRecognizers" destination="Ap9-g9-OiT" appends="YES" id="pdi-if-YN7"/>
                         </connections>
                     </view>
-                    <connections>
-                        <outlet property="crashCourseImageView" destination="3Oy-1Q-6sI" id="R3G-BZ-eva"/>
-                        <outlet property="descriptionTextView" destination="750-RU-HuW" id="FVf-i8-pIr"/>
-                        <outlet property="titleTextView" destination="HwW-dt-paO" id="fay-1D-iWB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Df-5y-jSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="Ap9-g9-OiT"/>
