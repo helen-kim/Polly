@@ -345,10 +345,10 @@ Remember that family members, especially children, may not be appropriate interp
             </objects>
             <point key="canvasLocation" x="-138" y="-707"/>
         </scene>
-        <!--Crash Course View Controller-->
+        <!--CrashCourseViewController-->
         <scene sceneID="e30-QK-UAh">
             <objects>
-                <viewController storyboardIdentifier="CrashCourseViewController" id="ORq-Ou-qcE" customClass="CrashCourseViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CrashCourseViewController" title="CrashCourseViewController" id="ORq-Ou-qcE" customClass="CrashCourseViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAq-HN-MES">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
