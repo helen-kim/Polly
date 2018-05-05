@@ -19,7 +19,7 @@ extension UITextField {
 class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var langField: UITextField!
-    
+    @IBOutlet weak var nextButton: UIButton!
     
     let languages = ["English", "Spanish", "Korean", "Chinese", "Arabic"]
     
@@ -27,13 +27,15 @@ class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        langField.layer.cornerRadius = langField.frame.height/2
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_inac"), for: .normal)
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_ac"), for: .highlighted)
         
         pickerView.delegate = self
         pickerView.dataSource = self
         
+        langField.setPadding()
         langField.inputView = pickerView
-        langField.textAlignment = .center
+        langField.textAlignment = .left
         langField.placeholder = "Select Language"
         
         
