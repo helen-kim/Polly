@@ -47,11 +47,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKM-oW-fiM">
                                 <rect key="frame" x="310" y="567" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="arrow_inac"/>
+                                <state key="normal" image="arrow_inac-1"/>
                                 <connections>
                                     <segue destination="Qcz-Zr-4yY" kind="showDetail" animates="NO" action="showViewController:sender:" id="SDp-sI-K1Y"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dropdown_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="wcd-v2-kYn">
+                                <rect key="frame" x="310" y="238" width="21" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PST-QG-beF"/>
@@ -65,7 +69,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8os-na-hUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kwJ-zx-F21" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1142" y="-707"/>
+            <point key="canvasLocation" x="-1143.2" y="-707.49625187406298"/>
         </scene>
         <!--POLLY-->
         <scene sceneID="3Wr-SK-fIT">
@@ -80,7 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85490196078431369" green="0.92941176470588238" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" image="profiles_inac">
+                                <state key="normal" image="profiles_inac-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -88,18 +92,18 @@
                                 <rect key="frame" x="15" y="288" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.86274509803921573" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="resources_inac">
+                                <state key="normal" image="resources_inac-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ORq-Ou-qcE" kind="show" id="70G-nJ-tvk"/>
+                                    <segue destination="3no-Bc-733" kind="show" id="Hu5-hA-grZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCg-LL-gRJ">
                                 <rect key="frame" x="192" y="288" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.5725490196078431" green="0.87450980392156863" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="settings_inac">
+                                <state key="normal" image="settings_inac-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -111,7 +115,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.55686274509803924" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" image="language_inac">
+                                <state key="normal" image="translation_inac">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -381,19 +385,7 @@ Remember that family members, especially children, may not be appropriate interp
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Df-5y-jSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="Ap9-g9-OiT"/>
             </objects>
-            <point key="canvasLocation" x="940" y="82"/>
-        </scene>
-        <!--CrashCoursePageController-->
-        <scene sceneID="biT-kk-jZh">
-            <objects>
-                <pageViewController storyboardIdentifier="CrashCoursePageController" autoresizesArchivedViewToFullSize="NO" title="CrashCoursePageController" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="MN5-kf-tDo" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="ORq-Ou-qcE" kind="show" id="Nsm-4B-Oeq"/>
-                    </connections>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kss-ZW-rT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10" y="81"/>
+            <point key="canvasLocation" x="1889" y="559"/>
         </scene>
         <!--Translation Service-->
         <scene sceneID="nLO-QO-dz1">
@@ -694,20 +686,66 @@ Remember that family members, especially children, may not be appropriate interp
             </objects>
             <point key="canvasLocation" x="5949.6000000000004" y="-1076.311844077961"/>
         </scene>
+        <!--Resources-->
+        <scene sceneID="xca-kn-WGR">
+            <objects>
+                <viewController id="3no-Bc-733" customClass="ResourcesController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tmY-x4-xA5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCP-OF-Jc6">
+                                <rect key="frame" x="192" y="109" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.92941176469999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" image="101_inac">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ORq-Ou-qcE" kind="show" id="mXh-p1-GOJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOU-l4-kFN">
+                                <rect key="frame" x="14" y="109" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41568627450000001" green="0.5568627451" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="dictionary_inac">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mCp-wX-VU0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resources" id="GiM-x5-yp6">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ofA-1f-tPL"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="courseButton" destination="nCP-OF-Jc6" id="3Ox-BX-mjZ"/>
+                        <outlet property="dictButton" destination="UOU-l4-kFN" id="fJ0-PT-u8Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJA-P4-S2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="559"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="101_inac" width="340" height="340"/>
         <image name="arrow_inac" width="44" height="44"/>
+        <image name="arrow_inac-1" width="44" height="44"/>
         <image name="capstone v1-01.png" width="1652" height="1652"/>
+        <image name="dictionary_inac" width="340" height="340"/>
+        <image name="dropdown_arrow" width="19" height="11"/>
         <image name="in_person_inac" width="94" height="94"/>
-        <image name="language_inac" width="170" height="170"/>
         <image name="phone_inac" width="94" height="94"/>
-        <image name="profiles_inac" width="170" height="170"/>
-        <image name="resources_inac" width="170" height="170"/>
+        <image name="profiles_inac-1" width="340" height="340"/>
+        <image name="resources_inac-1" width="340" height="340"/>
         <image name="send_request" width="420" height="88"/>
-        <image name="settings_inac" width="170" height="170"/>
+        <image name="settings_inac-1" width="340" height="340"/>
+        <image name="translation_inac" width="340" height="340"/>
         <image name="video_inac" width="94" height="94"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="70G-nJ-tvk"/>
-    </inferredMetricsTieBreakers>
 </document>

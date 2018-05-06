@@ -27,8 +27,10 @@ class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextButton.setImage(#imageLiteral(resourceName: "arrow_inac"), for: .normal)
-        nextButton.setImage(#imageLiteral(resourceName: "arrow_ac"), for: .highlighted)
+        nextButton.isEnabled = false
+        nextButton.setImage(#imageLiteral(resourceName: "arrow-disabled"), for: .disabled)
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_inac-1"), for: .normal)
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_ac-1"), for: .highlighted)
         
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -54,9 +56,10 @@ class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        nextButton.isEnabled = true
         langField.text = languages[row]
         langField.resignFirstResponder()
+        
     }
     
     override func didReceiveMemoryWarning() {
