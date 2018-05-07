@@ -586,7 +586,7 @@ Remember that family members, especially children, may not be appropriate interp
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow_inac-1"/>
                                 <connections>
-                                    <action selector="requestPressed:" destination="U8s-2L-e6M" eventType="touchUpInside" id="r3o-5Y-wJU"/>
+                                    <action selector="nextPressed:" destination="U8s-2L-e6M" eventType="touchUpInside" id="ME9-Ga-nMa"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dropdown_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="n30-fc-jPz">
@@ -605,7 +605,7 @@ Remember that family members, especially children, may not be appropriate interp
                         <outlet property="genderPicker" destination="XBy-12-a5q" id="ErH-ay-LFn"/>
                         <outlet property="nextButton" destination="NAI-3g-bdk" id="8Em-zs-L1c"/>
                         <outlet property="otherField" destination="inx-pv-IwO" id="8Ba-OC-BPQ"/>
-                        <segue destination="4AS-gI-5mw" kind="show" identifier="requestSegue" id="U3v-qq-LNd"/>
+                        <segue destination="4AS-gI-5mw" kind="show" identifier="requestSegue" id="OlJ-oO-LCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbg-h2-Nsp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -712,8 +712,7 @@ Remember that family members, especially children, may not be appropriate interp
                         <barButtonItem key="backBarButtonItem" title=" " id="mbb-Uk-bde"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="genderLabel" destination="0Hu-Hg-PWV" id="gvN-Xa-qy1"/>
-                        <outlet property="genderLable" destination="0Hu-Hg-PWV" id="FPn-lz-qL8"/>
+                        <outlet property="genderLabel" destination="0Hu-Hg-PWV" id="ut8-oT-Ybf"/>
                         <outlet property="patientName" destination="uc3-XV-ewP" id="MFa-mt-Mlc"/>
                     </connections>
                 </viewController>

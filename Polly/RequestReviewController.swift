@@ -18,6 +18,7 @@ class RequestReviewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         patientName.delegate = self
+        
         if let genderToDisplay = gender {
             genderLabel.text = genderToDisplay
         }

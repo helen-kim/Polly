@@ -44,7 +44,7 @@ class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPicker
         nextButton.isHidden = true
     }
     
-    @IBAction func requestPressed(_ sender: UIButton) {
+    @IBAction func nextPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "requestSegue", sender: self)
     }
     
