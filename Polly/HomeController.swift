@@ -16,14 +16,14 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        langButton.setImage(#imageLiteral(resourceName: "language_inac"), for: .normal)
-        langButton.setImage(#imageLiteral(resourceName: "language_ac"), for: .highlighted)
-        resButton.setImage(#imageLiteral(resourceName: "resources_inac"), for: .normal)
-        resButton.setImage(#imageLiteral(resourceName: "resources_ac"), for: .highlighted)
-        setButton.setImage(#imageLiteral(resourceName: "settings_inac"), for: .normal)
-        setButton.setImage(#imageLiteral(resourceName: "settings_ac"), for: .highlighted)
-        profButton.setImage(#imageLiteral(resourceName: "profiles_inac"), for: .normal)
-        profButton.setImage(#imageLiteral(resourceName: "profiles_ac"), for: .highlighted)
+        langButton.setImage(#imageLiteral(resourceName: "translation_inac"), for: .normal)
+        langButton.setImage(#imageLiteral(resourceName: "translation_ac"), for: .highlighted)
+        resButton.setImage(#imageLiteral(resourceName: "resources_inac-1"), for: .normal)
+        resButton.setImage(#imageLiteral(resourceName: "resources_ac-1"), for: .highlighted)
+        setButton.setImage(#imageLiteral(resourceName: "settings_inac-1"), for: .normal)
+        setButton.setImage(#imageLiteral(resourceName: "settings_ac-1"), for: .highlighted)
+        profButton.setImage(#imageLiteral(resourceName: "profiles_inac-1"), for: .normal)
+        profButton.setImage(#imageLiteral(resourceName: "profiles_ac-1"), for: .highlighted)
     }
 
     override func didReceiveMemoryWarning() {

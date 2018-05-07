@@ -16,7 +16,7 @@ import UIKit
 //    }
 //}
 
-class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var otherField: UITextField!
     @IBOutlet weak var genderPicker: UIPickerView!
@@ -26,11 +26,12 @@ class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         genderPicker.isHidden = true
-        nextButton.setImage(#imageLiteral(resourceName: "arrow_inac"), for: .normal)
-        nextButton.setImage(#imageLiteral(resourceName: "arrow_ac"), for: .highlighted)
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_inac-1"), for: .normal)
+        nextButton.setImage(#imageLiteral(resourceName: "arrow_ac-1"), for: .highlighted)
         
         super.viewDidLoad()
         otherField.setPadding()
+        otherField.delegate = self
         
         genderPicker.delegate = self
         genderPicker.dataSource = self
@@ -40,6 +41,7 @@ class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPicker
         if genderPicker.isHidden {
             genderPicker.isHidden = false
         }
+        nextButton.isHidden = true
     }
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -56,8 +58,15 @@ class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         genderButton.setTitle(genders[row], for: .normal)
+        genderButton.setTitleColor(UIColor.black, for: .normal)
         genderPicker.isHidden = true
+        
+        nextButton.isHidden = false
     }
     
+    func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 }
 

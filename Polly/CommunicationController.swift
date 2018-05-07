@@ -16,12 +16,12 @@ class CommunicationController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        inPerButton.setImage(#imageLiteral(resourceName: "in_person_inac"), for: .normal)
-        inPerButton.setImage(#imageLiteral(resourceName: "in_person_ac"), for: .highlighted)
-        vidButton.setImage(#imageLiteral(resourceName: "video_inac"), for: .normal)
-        vidButton.setImage(#imageLiteral(resourceName: "video_ac"), for: .highlighted)
-        phoneButton.setImage(#imageLiteral(resourceName: "phone_inac"), for: .normal)
-        phoneButton.setImage(#imageLiteral(resourceName: "phone_ac"), for: .highlighted)
+        inPerButton.setImage(#imageLiteral(resourceName: "in_person_inac-1"), for: .normal)
+        inPerButton.setImage(#imageLiteral(resourceName: "in_person_ac-1"), for: .highlighted)
+        vidButton.setImage(#imageLiteral(resourceName: "video_inac-1"), for: .normal)
+        vidButton.setImage(#imageLiteral(resourceName: "video_ac-1"), for: .highlighted)
+        phoneButton.setImage(#imageLiteral(resourceName: "phone_inac-1"), for: .normal)
+        phoneButton.setImage(#imageLiteral(resourceName: "phone_ac-1"), for: .highlighted)
     }
 
     override func didReceiveMemoryWarning() {
