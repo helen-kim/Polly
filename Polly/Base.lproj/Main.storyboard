@@ -153,7 +153,7 @@
             <objects>
                 <viewController id="Hgc-Lf-wQK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yG3-BU-d2t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-4H-3xc">
@@ -200,6 +200,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BhI-dZ-KMf"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="nav_trans_inac" selectedImage="nav_home_ac" id="Nou-5e-rwl"/>
                     <navigationItem key="navigationItem" title="Translation Services" id="csQ-O3-Td5">
                         <barButtonItem key="backBarButtonItem" title=" " id="Hk3-vu-VUa"/>
                     </navigationItem>
@@ -258,7 +259,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="ARQ-W8-aZf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Adl-9S-0YA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who is the patient?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO8-uq-NwB">
@@ -394,7 +395,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="qWr-7A-VUi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B1U-YX-DrO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="720-xu-7Cw" customClass="RoundedButtonNoBorder" customModule="Polly" customModuleProvider="target">
@@ -458,6 +459,7 @@ Remember that family members, especially children, may not be appropriate interp
                     </tabBar>
                     <connections>
                         <segue destination="Qcz-Zr-4yY" kind="relationship" relationship="viewControllers" id="wpN-3u-FcB"/>
+                        <segue destination="Hgc-Lf-wQK" kind="relationship" relationship="viewControllers" id="Xft-tj-JDp"/>
                         <segue destination="3yL-la-cUb" kind="relationship" relationship="viewControllers" id="zqW-CO-rny"/>
                         <segue destination="gJi-QL-Mnn" kind="relationship" relationship="viewControllers" id="Gnp-Fx-zY5"/>
                     </connections>
@@ -471,7 +473,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="rw7-0d-05D" customClass="CommunicationController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqr-qe-fiW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've indicated that you'd like to request a professional translator.   What is your preferred method of communication?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQn-Pg-sSI">
@@ -530,7 +532,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="U8s-2L-e6M" customClass="SpecificationsController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97v-In-e8O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translator Preferences" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lQ-PG-4Kh">
@@ -614,7 +616,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="4AS-gI-5mw" customClass="RequestReviewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GX4-Vr-H5a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hu-Hg-PWV">
@@ -793,6 +795,7 @@ Remember that family members, especially children, may not be appropriate interp
         <image name="nav_resource_inac" width="30" height="24"/>
         <image name="nav_settings_ac" width="29" height="30"/>
         <image name="nav_settings_inac" width="29" height="29"/>
+        <image name="nav_trans_inac" width="29" height="29"/>
         <image name="phone_inac-1" width="188" height="188"/>
         <image name="profiles_inac-1" width="340" height="340"/>
         <image name="resources_inac-1" width="340" height="340"/>
@@ -803,6 +806,7 @@ Remember that family members, especially children, may not be appropriate interp
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Hu5-hA-grZ"/>
+        <segue reference="Xft-tj-JDp"/>
         <segue reference="Gnp-Fx-zY5"/>
     </inferredMetricsTieBreakers>
 </document>
