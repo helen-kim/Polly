@@ -40,7 +40,7 @@ class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         langField.textAlignment = .left
         langField.placeholder = "Select Language"
         
-        
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
