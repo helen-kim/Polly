@@ -26,6 +26,8 @@
 		0FB07F6220794077004F437D /* capstone v1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F6120794077004F437D /* capstone v1-01.png */; };
 		EA3DBB332083DE86002D39FC /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB322083DE86002D39FC /* SwipingController.swift */; };
 		EA3DBB352083E465002D39FC /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB342083E465002D39FC /* PageCell.swift */; };
+		0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */; };
+		0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		0FB07F6120794077004F437D /* capstone v1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capstone v1-01.png"; sourceTree = "<group>"; };
 		EA3DBB322083DE86002D39FC /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		EA3DBB342083E465002D39FC /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesController.swift; sourceTree = "<group>"; };
+		0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				0F7568C72099713C00F82ACA /* LanguageController.swift */,
 				0F7568C9209974A800F82ACA /* RoundedButtonNoBorder.swift */,
 				0F7568CB2099804900F82ACA /* HomeController.swift */,
+				0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */,
+				0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */,
 			);
 			path = Polly;
 			sourceTree = "<group>";
@@ -194,13 +200,12 @@
 				0FB07F4E2076E0A5004F437D /* ViewController.swift in Sources */,
 				0F54EBC22093E179004E16DF /* InfoPopupViewController.swift in Sources */,
 				0FB07F4C2076E0A5004F437D /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
 				EA3DBB352083E465002D39FC /* PageCell.swift in Sources */,
 				EA3DBB332083DE86002D39FC /* SwipingController.swift in Sources */,
-=======
 				0F7568CE2099820800F82ACA /* CommunicationController.swift in Sources */,
->>>>>>> 71cbf12fa01ac55134d85ae9530dd80e959bce12
+				0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */,
 				0F54EBD0209655E8004E16DF /* SpecificationsController.swift in Sources */,
+				0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */,
 				0F7568CC2099804900F82ACA /* HomeController.swift in Sources */,
 				0F54EBCA20964E9E004E16DF /* RoundedTextField.swift in Sources */,
 				0F7568CA209974A800F82ACA /* RoundedButtonNoBorder.swift in Sources */,
