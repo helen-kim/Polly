@@ -11,11 +11,16 @@ import UIKit
 class RequestReviewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var patientName: UITextField!
+    @IBOutlet weak var genderLabel: UILabel!
+    
+    var gender:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         patientName.delegate = self
-        
+        if let genderToDisplay = gender {
+            genderLabel.text = genderToDisplay
+        }
     }
     
     func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {

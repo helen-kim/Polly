@@ -15,7 +15,7 @@
             <objects>
                 <viewController storyboardIdentifier="LanguageController" title="LanguageController" id="gJi-QL-Mnn" customClass="LanguageController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A5d-0Q-G5c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-4P-Zcy">
@@ -153,7 +153,7 @@
             <objects>
                 <viewController id="Hgc-Lf-wQK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yG3-BU-d2t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-4H-3xc">
@@ -259,7 +259,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="ARQ-W8-aZf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Adl-9S-0YA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who is the patient?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO8-uq-NwB">
@@ -395,7 +395,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="qWr-7A-VUi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B1U-YX-DrO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="720-xu-7Cw" customClass="RoundedButtonNoBorder" customModule="Polly" customModuleProvider="target">
@@ -473,7 +473,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="rw7-0d-05D" customClass="CommunicationController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqr-qe-fiW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've indicated that you'd like to request a professional translator.   What is your preferred method of communication?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQn-Pg-sSI">
@@ -532,7 +532,7 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="U8s-2L-e6M" customClass="SpecificationsController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97v-In-e8O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translator Preferences" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lQ-PG-4Kh">
@@ -586,7 +586,7 @@ Remember that family members, especially children, may not be appropriate interp
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="arrow_inac-1"/>
                                 <connections>
-                                    <segue destination="4AS-gI-5mw" kind="show" id="DOd-1V-Cmj"/>
+                                    <action selector="requestPressed:" destination="U8s-2L-e6M" eventType="touchUpInside" id="r3o-5Y-wJU"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dropdown_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="n30-fc-jPz">
@@ -605,6 +605,7 @@ Remember that family members, especially children, may not be appropriate interp
                         <outlet property="genderPicker" destination="XBy-12-a5q" id="ErH-ay-LFn"/>
                         <outlet property="nextButton" destination="NAI-3g-bdk" id="8Em-zs-L1c"/>
                         <outlet property="otherField" destination="inx-pv-IwO" id="8Ba-OC-BPQ"/>
+                        <segue destination="4AS-gI-5mw" kind="show" identifier="requestSegue" id="U3v-qq-LNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbg-h2-Nsp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -616,11 +617,11 @@ Remember that family members, especially children, may not be appropriate interp
             <objects>
                 <viewController id="4AS-gI-5mw" customClass="RequestReviewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GX4-Vr-H5a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hu-Hg-PWV">
-                                <rect key="frame" x="29" y="417" width="105" height="21"/>
+                                <rect key="frame" x="29" y="417" width="284" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -711,6 +712,8 @@ Remember that family members, especially children, may not be appropriate interp
                         <barButtonItem key="backBarButtonItem" title=" " id="mbb-Uk-bde"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="genderLabel" destination="0Hu-Hg-PWV" id="gvN-Xa-qy1"/>
+                        <outlet property="genderLable" destination="0Hu-Hg-PWV" id="FPn-lz-qL8"/>
                         <outlet property="patientName" destination="uc3-XV-ewP" id="MFa-mt-Mlc"/>
                     </connections>
                 </viewController>
@@ -806,7 +809,7 @@ Remember that family members, especially children, may not be appropriate interp
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Hu5-hA-grZ"/>
-        <segue reference="Xft-tj-JDp"/>
-        <segue reference="Gnp-Fx-zY5"/>
+        <segue reference="zRH-86-Sm4"/>
+        <segue reference="wCF-8o-FNF"/>
     </inferredMetricsTieBreakers>
 </document>

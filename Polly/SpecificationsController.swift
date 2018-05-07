@@ -44,6 +44,20 @@ class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPicker
         nextButton.isHidden = true
     }
     
+    @IBAction func requestPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "requestSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? RequestReviewController {
+            if genderButton.title(for: .normal) != "Select gender" {
+                destination.gender = genderButton.title(for: .normal)
+            } else {
+                destination.gender = "No preference"
+            }
+        }
+    }
+    
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
