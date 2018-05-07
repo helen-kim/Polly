@@ -26,6 +26,7 @@
 		0FB07F6220794077004F437D /* capstone v1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F6120794077004F437D /* capstone v1-01.png */; };
 		0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */; };
 		0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */; };
+		0FBC68AF20A0038E00D3D939 /* RequestConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		0FB07F6120794077004F437D /* capstone v1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capstone v1-01.png"; sourceTree = "<group>"; };
 		0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesController.swift; sourceTree = "<group>"; };
 		0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewController.swift; sourceTree = "<group>"; };
+		0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfirmController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				0F7568CB2099804900F82ACA /* HomeController.swift */,
 				0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */,
 				0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */,
+				0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */,
 			);
 			path = Polly;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */,
 				0F54EBD0209655E8004E16DF /* SpecificationsController.swift in Sources */,
 				0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */,
+				0FBC68AF20A0038E00D3D939 /* RequestConfirmController.swift in Sources */,
 				0F7568CC2099804900F82ACA /* HomeController.swift in Sources */,
 				0F54EBCA20964E9E004E16DF /* RoundedTextField.swift in Sources */,
 				0F7568CA209974A800F82ACA /* RoundedButtonNoBorder.swift in Sources */,

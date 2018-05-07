@@ -75,7 +75,7 @@
         <!--POLLY-->
         <scene sceneID="3Wr-SK-fIT">
             <objects>
-                <viewController id="SIT-k5-kNI" customClass="HomeController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="SIT-k5-kNI" customClass="HomeController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="miF-EA-e80">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,7 +323,7 @@ Remember that family members, especially children, may not be appropriate interp
         <!--Navigation Controller-->
         <scene sceneID="6DC-Xh-UbL">
             <objects>
-                <navigationController hidesBarsWhenKeyboardAppears="YES" id="Qcz-Zr-4yY" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigation" hidesBarsWhenKeyboardAppears="YES" id="Qcz-Zr-4yY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="nav_home_inac" selectedImage="nav_home_ac" id="Vvh-tv-4xZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3GW-0G-EmK">
@@ -615,7 +615,7 @@ Remember that family members, especially children, may not be appropriate interp
         <!--Review Your Request-->
         <scene sceneID="g1n-HL-uWr">
             <objects>
-                <viewController id="4AS-gI-5mw" customClass="RequestReviewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="review" id="4AS-gI-5mw" customClass="RequestReviewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GX4-Vr-H5a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -689,6 +689,9 @@ Remember that family members, especially children, may not be appropriate interp
                                 <rect key="frame" x="82" y="477" width="210" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="send_request"/>
+                                <connections>
+                                    <segue destination="wpQ-ij-Lk7" kind="presentation" id="MXM-PN-nIl"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please type patient's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-XV-ewP">
                                 <rect key="frame" x="28" y="86" width="285" height="30"/>
@@ -783,10 +786,75 @@ Remember that family members, especially children, may not be appropriate interp
             </objects>
             <point key="canvasLocation" x="985" y="559"/>
         </scene>
+        <!--Request Confirm Controller-->
+        <scene sceneID="jrj-1W-uxq">
+            <objects>
+                <viewController id="wpQ-ij-Lk7" customClass="RequestConfirmController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="toU-Hv-fEg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYu-3K-R2P">
+                                <rect key="frame" x="7" y="64" width="360" height="539"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request Sent" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyt-dD-UdD">
+                                        <rect key="frame" x="60" y="8" width="240" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.1764705882" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 5" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-IN-agW">
+                                        <rect key="frame" x="100" y="112" width="160" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHX-cD-Kze">
+                                        <rect key="frame" x="21" y="411" width="319" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Your healthcare provider will confirm appointment times with you. If you don't hear back within 24 hours, please reach out or send another request.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umk-w3-JPM">
+                                        <rect key="frame" x="21" y="349" width="319" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS8-OZ-mzd">
+                                <rect key="frame" x="311" y="35" width="21" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cancel"/>
+                                <connections>
+                                    <segue destination="X59-db-Pji" kind="unwind" unwindAction="unwindAction:" id="m2X-Sh-hmF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.99161783849999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GhW-bb-86O"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="bS8-OZ-mzd" id="Mla-2C-xbX"/>
+                        <outlet property="dateLabel" destination="Umk-w3-JPM" id="xeL-ON-gdo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QvY-2U-Ge9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="X59-db-Pji" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="6895" y="-1076"/>
+        </scene>
     </scenes>
     <resources>
         <image name="101_inac" width="340" height="340"/>
+        <image name="Group 5" width="160" height="160"/>
         <image name="arrow_inac-1" width="44" height="44"/>
+        <image name="cancel" width="17" height="17"/>
         <image name="capstone v1-01.png" width="1652" height="1652"/>
         <image name="dictionary_inac" width="340" height="340"/>
         <image name="dropdown_arrow" width="19" height="11"/>

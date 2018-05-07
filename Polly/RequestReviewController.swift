@@ -29,6 +29,11 @@ class RequestReviewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+//    override func viewDidAppear(_ animated: Bool) {
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "navigation")
+//        self.present(vc!, animated: true)
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
