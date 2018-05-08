@@ -60,9 +60,14 @@ class RequestConfirmController: UIViewController {
         }
     }
     
-    @IBAction func unwindAction(_ sender: UIStoryboardSegue) {
-        print("unwind")
+//    @IBAction func unwindAction(_ sender: UIStoryboardSegue) {
+//        print("unwind")
+//    }
+    
+    @IBAction func closePressed(_ sender: Any) {
+        dismiss(animated: true)
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
