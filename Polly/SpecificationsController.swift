@@ -36,7 +36,6 @@ class SpecificationsController: UIViewController, UIPickerViewDelegate, UIPicker
         nextButton.setImage(#imageLiteral(resourceName: "arrow_inac-1"), for: .normal)
         nextButton.setImage(#imageLiteral(resourceName: "arrow_ac-1"), for: .highlighted)
         
-        super.viewDidLoad()
         otherField.setPadding()
         otherField.delegate = self
         
