@@ -12,7 +12,6 @@ class InterpretationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Hide the nav bar
 //        self.navigationController?.setNavigationBarHidden(true, animated: true)
 

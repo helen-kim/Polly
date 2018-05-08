@@ -33,7 +33,7 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         super.viewWillAppear(animated)
         
         // Hide the nav bar
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+//        self.navigationController?.setNavigationBarHidden(true, animated: animated)
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
