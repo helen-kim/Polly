@@ -458,26 +458,6 @@ Remember that family members, especially children, may not be appropriate interp
             </objects>
             <point key="canvasLocation" x="-380" y="-707"/>
         </scene>
-        <!--CrashCourseViewController-->
-        <scene sceneID="e30-QK-UAh">
-            <objects>
-                <viewController storyboardIdentifier="CrashCourseViewController" title="CrashCourseViewController" id="ORq-Ou-qcE" customClass="CrashCourseViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cAq-HN-MES">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <viewLayoutGuide key="safeArea" id="cHI-R6-rXu"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Ap9-g9-OiT" appends="YES" id="pdi-if-YN7"/>
-                        </connections>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Df-5y-jSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="Ap9-g9-OiT"/>
-            </objects>
-            <point key="canvasLocation" x="1888.8" y="558.17091454272872"/>
-        </scene>
         <!--Translation Service-->
         <scene sceneID="nLO-QO-dz1">
             <objects>
@@ -516,7 +496,7 @@ Remember that family members, especially children, may not be appropriate interp
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ORq-Ou-qcE" kind="show" id="b0t-Sq-031"/>
+                                    <segue destination="4il-4q-VDz" kind="show" id="vvE-rk-1At"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who will be acting as a translator?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSC-Fo-hGQ">
@@ -876,7 +856,7 @@ Remember that family members, especially children, may not be appropriate interp
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ORq-Ou-qcE" kind="show" id="mXh-p1-GOJ"/>
+                                    <segue destination="4il-4q-VDz" kind="show" id="xtv-rJ-3Ox"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOU-l4-kFN">
@@ -972,6 +952,78 @@ Remember that family members, especially children, may not be appropriate interp
             </objects>
             <point key="canvasLocation" x="6893.6000000000004" y="-1076.311844077961"/>
         </scene>
+        <!--Interpretation 101-->
+        <scene sceneID="d0G-no-vXa">
+            <objects>
+                <viewController id="4il-4q-VDz" customClass="InterpretationViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mcB-Pd-iHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone 8 Copy 10.2" translatesAutoresizingMaskIntoConstraints="NO" id="6pm-WS-25p">
+                                <rect key="frame" x="0.0" y="-104" width="375" height="669"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQ2-TT-toJ" customClass="RoundedButtonNoBorder" customModule="Polly" customModuleProvider="target">
+                                <rect key="frame" x="82" y="452" width="210" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57254901960000004" green="0.87450980389999999" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="1" green="0.86274509799999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.0" green="0.1764705882" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="D5y-60-pgg" kind="show" id="dWX-1k-8Kh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7EQ-YQ-0JR">
+                                <rect key="frame" x="38" y="244" width="309" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Translating is a tough role, so thanks for stepping up! In the medical field, you may hear yourself be referred to as an "ad hoc translator."  Welcome to the translation crash course. Here are some tips from professionals that you may want to consider before translating.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zRR-9A-zid">
+                                <rect key="frame" x="38" y="206" width="233" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.01258392471" green="0.05905364892" blue="0.43799654360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LXL-Ad-hjN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="60t-J8-bxy"/>
+                    <navigationItem key="navigationItem" title="Interpretation 101" id="LDg-4h-ij4">
+                        <barButtonItem key="backBarButtonItem" title=" " id="5Fc-Yo-3kg"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4h-dX-qzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="557"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="JYQ-DS-nSA">
+            <objects>
+                <viewController id="D5y-60-pgg" customClass="CrashCourseViewController" customModule="Polly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fw0-hv-y8B" customClass="CrashCourse">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sMJ-9y-5t7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="3be-uV-J2G"/>
+                    <navigationItem key="navigationItem" id="moM-na-js1">
+                        <barButtonItem key="backBarButtonItem" title=" " id="8EP-OO-dmL"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5HP-Qj-rKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3452" y="558"/>
+        </scene>
     </scenes>
     <resources>
         <image name="101_inac" width="340" height="340"/>
@@ -982,6 +1034,7 @@ Remember that family members, especially children, may not be appropriate interp
         <image name="cancel" width="17" height="17"/>
         <image name="dictionary_inac" width="340" height="340"/>
         <image name="dropdown_arrow" width="19" height="11"/>
+        <image name="iPhone 8 Copy 10.2" width="750" height="1334"/>
         <image name="in_person_inac-1" width="188" height="188"/>
         <image name="nav_home_ac" width="30" height="28"/>
         <image name="nav_home_inac" width="29" height="28"/>
@@ -1001,8 +1054,8 @@ Remember that family members, especially children, may not be appropriate interp
         <image name="video_inac-1" width="188" height="188"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hu5-hA-grZ"/>
-        <segue reference="mXh-p1-GOJ"/>
+        <segue reference="vvE-rk-1At"/>
+        <segue reference="Auh-rh-jCx"/>
         <segue reference="TbT-Il-jMK"/>
         <segue reference="zRH-86-Sm4"/>
         <segue reference="wCF-8o-FNF"/>
