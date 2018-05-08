@@ -65,6 +65,7 @@ class RequestConfirmController: UIViewController {
 //    }
     
     @IBAction func closePressed(_ sender: Any) {
+        self.navigationController?.isNavigationBarHidden = false
         dismiss(animated: true)
     }
     
