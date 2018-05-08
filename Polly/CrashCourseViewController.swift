@@ -27,7 +27,6 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         
         setupBottomControls()
         
-//        setupLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,12 +48,6 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         
     }
     
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        
-//        // Show the Navigation Bar
-//        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
@@ -68,46 +61,16 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         
         // dequeue and cast as PageCell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! PageCell
-        
-//        let imageName = imageNames[indexPath.item]
-//        cell.crashCourseImageView.image = UIImage(named: imageName)
-//        let attributedTitle = NSMutableAttributedString(string: titleStrings[indexPath.item], attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
-//        cell.descriptionTextView.attributedText = attributedTitle
 
         let page = pages[indexPath.item]
         cell.page = page
         
-//        cell.crashCourseImageView.image = UIImage(named: page.imageName)
-//        cell.descriptionTextView.text = page.titleText
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
-    
-//    let crashCourseImageView: UIImageView = {
-//        let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
-//        // this enables autolayout for our imageView
-//        imageView.translatesAutoresizingMaskIntoConstraints = false
-//        imageView.contentMode = .scaleAspectFit
-//        return imageView
-//    }()
-//
-//    let descriptionTextView: UITextView = {
-//        let textView = UITextView()
-//
-//        let attributedText = NSMutableAttributedString(string: "Join us today in our fun and games!", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
-//
-//        attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
-//
-//        textView.attributedText = attributedText
-//        textView.translatesAutoresizingMaskIntoConstraints = false
-//        textView.textAlignment = .center
-//        textView.isEditable = false
-//        textView.isScrollEnabled = false
-//        return textView
-//    }()
     
     // make sure you apply the correct encapsulation principles in your classes
     private let previousButton: UIButton = {

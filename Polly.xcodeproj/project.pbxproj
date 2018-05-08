@@ -32,11 +32,12 @@
 		0FB07F6220794077004F437D /* capstone v1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F6120794077004F437D /* capstone v1-01.png */; };
 		0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */; };
 		0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */; };
+		0FBC68AF20A0038E00D3D939 /* RequestConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */; };
 		EA2B0559209652A600F20A0A /* CrashCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0558209652A600F20A0A /* CrashCourseViewController.swift */; };
 		EA3DBB332083DE86002D39FC /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB322083DE86002D39FC /* SwipingController.swift */; };
 		EA3DBB352083E465002D39FC /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB342083E465002D39FC /* PageCell.swift */; };
+		EA83CEC520A1B3950035D589 /* InterpretationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83CEC420A1B3950035D589 /* InterpretationViewController.swift */; };
 		EAC58A2A20A19E3B00CE8639 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC58A2920A19E3B00CE8639 /* Page.swift */; };
-		0FBC68AF20A0038E00D3D939 /* RequestConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,11 +68,12 @@
 		0FB07F6120794077004F437D /* capstone v1-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "capstone v1-01.png"; sourceTree = "<group>"; };
 		0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesController.swift; sourceTree = "<group>"; };
 		0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReviewController.swift; sourceTree = "<group>"; };
+		0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfirmController.swift; sourceTree = "<group>"; };
 		EA2B0558209652A600F20A0A /* CrashCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashCourseViewController.swift; sourceTree = "<group>"; };
 		EA3DBB322083DE86002D39FC /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		EA3DBB342083E465002D39FC /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		EA83CEC420A1B3950035D589 /* InterpretationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpretationViewController.swift; sourceTree = "<group>"; };
 		EAC58A2920A19E3B00CE8639 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfirmController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				0FB07F4D2076E0A5004F437D /* ViewController.swift */,
 				EA2B0558209652A600F20A0A /* CrashCourseViewController.swift */,
 				EAC58A2920A19E3B00CE8639 /* Page.swift */,
+				EA83CEC420A1B3950035D589 /* InterpretationViewController.swift */,
 				0FB07F4F2076E0A5004F437D /* Main.storyboard */,
 				0F7568CD2099820800F82ACA /* CommunicationController.swift */,
 				0FB07F522076E0A5004F437D /* Assets.xcassets */,
@@ -245,6 +248,7 @@
 				0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */,
 				0F0A1DAE20A1875500E11FF8 /* TypeController.swift in Sources */,
 				0F54EBD0209655E8004E16DF /* SpecificationsController.swift in Sources */,
+				EA83CEC520A1B3950035D589 /* InterpretationViewController.swift in Sources */,
 				0F0A1DAA20A1736700E11FF8 /* NavigationViewController.swift in Sources */,
 				0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */,
 				0FBC68AF20A0038E00D3D939 /* RequestConfirmController.swift in Sources */,
