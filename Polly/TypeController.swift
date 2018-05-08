@@ -37,6 +37,8 @@ class TypeController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? CommunicationController {
             destination.lang = lang
+        } else if let dest = segue.destination as? InterpretationViewController {
+            dest.lang = lang
         }
     }
     

@@ -39,6 +39,12 @@ class ResourcesController: UIViewController {
             dictButton.isEnabled = false
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? InterpretationViewController {
+            destination.lang = lang
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
