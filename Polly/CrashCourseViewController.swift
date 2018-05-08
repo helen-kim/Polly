@@ -22,7 +22,7 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         
         setupBottomControls()
         
-        setupLayout()
+//        setupLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -143,33 +143,33 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
             ])
     }
     
-    private func setupLayout() {
-        let topImageContainerView = UIView()
-        //        topImageContainerView.backgroundColor = .blue
-        view.addSubview(topImageContainerView)
-        //enable auto layout
-        topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
-        
-        topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        
-        topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
-        topImageContainerView.addSubview(crashCourseImageView)
-        crashCourseImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
-        crashCourseImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
-        crashCourseImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.8).isActive = true
-        
-        topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
-        
-       
-        view.addSubview(descriptionTextView)
-
-        descriptionTextView.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor).isActive = true
-        descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
-        descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
-        descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-    }
+//    private func setupLayout() {
+//        let topImageContainerView = UIView()
+//        //        topImageContainerView.backgroundColor = .blue
+//        view.addSubview(topImageContainerView)
+//        //enable auto layout
+//        topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
+//
+//        topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+//
+//        topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+//        topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+//
+//        topImageContainerView.addSubview(crashCourseImageView)
+//        crashCourseImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
+//        crashCourseImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
+//        crashCourseImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 1).isActive = true
+//
+//        topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+//
+//
+//        view.addSubview(descriptionTextView)
+//
+//        descriptionTextView.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor).isActive = true
+//        descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
+//        descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
+//        descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+//    }
 
     /*
     // MARK: - Navigation
