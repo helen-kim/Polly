@@ -31,14 +31,11 @@
 		0FB07F6220794077004F437D /* capstone v1-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FB07F6120794077004F437D /* capstone v1-01.png */; };
 		0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68A8209FC3F500D3D939 /* ResourcesController.swift */; };
 		0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */; };
-<<<<<<< HEAD
 		EA2B0559209652A600F20A0A /* CrashCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2B0558209652A600F20A0A /* CrashCourseViewController.swift */; };
 		EA3DBB332083DE86002D39FC /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB322083DE86002D39FC /* SwipingController.swift */; };
 		EA3DBB352083E465002D39FC /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3DBB342083E465002D39FC /* PageCell.swift */; };
 		EAC58A2A20A19E3B00CE8639 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC58A2920A19E3B00CE8639 /* Page.swift */; };
-=======
 		0FBC68AF20A0038E00D3D939 /* RequestConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */; };
->>>>>>> 988314099984b7d38088336d743500efb18ff44e
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
