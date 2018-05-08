@@ -12,8 +12,50 @@ extension UIColor {
     static var blue = UIColor(red: 232/255, green: 68/255, blue: 133/255, alpha: 1)
 }
 
-class CrashCourseViewController: UIViewController {
+class CrashCourseViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        collectionView?.backgroundColor = .white
+        collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
+        
+        collectionView?.isPagingEnabled = true
+        
+        // here's our entry point into our app
+        //        view.addSubview(crashCourseImageView)
+        view.addSubview(descriptionTextView)
+        
+        setupBottomControls()
+        
+        setupLayout()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        
+        let collectionView:UICollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
+        self.view.addSubview(collectionView)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: view.frame.height)
+    }
     
     let crashCourseImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
@@ -65,18 +107,6 @@ class CrashCourseViewController: UIViewController {
         pc.pageIndicatorTintColor = UIColor(red: 249/255, green: 207/255, blue: 224/255, alpha: 1)
         return pc
     }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // here's our entry point into our app
-        //        view.addSubview(crashCourseImageView)
-        view.addSubview(descriptionTextView)
-        
-        setupBottomControls()
-        
-        setupLayout()
-    }
     
     fileprivate func setupBottomControls() {
 
