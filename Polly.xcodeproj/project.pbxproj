@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0F0A1DA620A164B400E11FF8 /* PatientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A1DA520A164B400E11FF8 /* PatientController.swift */; };
+		0F0A1DA820A16E8C00E11FF8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A1DA720A16E8C00E11FF8 /* TabBarViewController.swift */; };
+		0F0A1DAA20A1736700E11FF8 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A1DA920A1736700E11FF8 /* NavigationViewController.swift */; };
+		0F0A1DAC20A17ABF00E11FF8 /* TranslationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A1DAB20A17ABF00E11FF8 /* TranslationController.swift */; };
+		0F0A1DAE20A1875500E11FF8 /* TypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0A1DAD20A1875500E11FF8 /* TypeController.swift */; };
 		0F54EBC22093E179004E16DF /* InfoPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F54EBC12093E179004E16DF /* InfoPopupViewController.swift */; };
 		0F54EBC820964584004E16DF /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F54EBC720964584004E16DF /* RoundedButton.swift */; };
 		0F54EBCA20964E9E004E16DF /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F54EBC920964E9E004E16DF /* RoundedTextField.swift */; };
@@ -32,6 +36,10 @@
 
 /* Begin PBXFileReference section */
 		0F0A1DA520A164B400E11FF8 /* PatientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientController.swift; sourceTree = "<group>"; };
+		0F0A1DA720A16E8C00E11FF8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		0F0A1DA920A1736700E11FF8 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		0F0A1DAB20A17ABF00E11FF8 /* TranslationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationController.swift; sourceTree = "<group>"; };
+		0F0A1DAD20A1875500E11FF8 /* TypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeController.swift; sourceTree = "<group>"; };
 		0F54EBC12093E179004E16DF /* InfoPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopupViewController.swift; sourceTree = "<group>"; };
 		0F54EBC720964584004E16DF /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0F54EBC920964E9E004E16DF /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
@@ -105,6 +113,10 @@
 				0FBC68AA209FCD9400D3D939 /* RequestReviewController.swift */,
 				0FBC68AE20A0038E00D3D939 /* RequestConfirmController.swift */,
 				0F0A1DA520A164B400E11FF8 /* PatientController.swift */,
+				0F0A1DA720A16E8C00E11FF8 /* TabBarViewController.swift */,
+				0F0A1DA920A1736700E11FF8 /* NavigationViewController.swift */,
+				0F0A1DAB20A17ABF00E11FF8 /* TranslationController.swift */,
+				0F0A1DAD20A1875500E11FF8 /* TypeController.swift */,
 			);
 			path = Polly;
 			sourceTree = "<group>";
@@ -203,12 +215,16 @@
 				0F7568CE2099820800F82ACA /* CommunicationController.swift in Sources */,
 				0F0A1DA620A164B400E11FF8 /* PatientController.swift in Sources */,
 				0FBC68A9209FC3F500D3D939 /* ResourcesController.swift in Sources */,
+				0F0A1DAE20A1875500E11FF8 /* TypeController.swift in Sources */,
 				0F54EBD0209655E8004E16DF /* SpecificationsController.swift in Sources */,
+				0F0A1DAA20A1736700E11FF8 /* NavigationViewController.swift in Sources */,
 				0FBC68AB209FCD9400D3D939 /* RequestReviewController.swift in Sources */,
 				0FBC68AF20A0038E00D3D939 /* RequestConfirmController.swift in Sources */,
 				0F7568CC2099804900F82ACA /* HomeController.swift in Sources */,
 				0F54EBCA20964E9E004E16DF /* RoundedTextField.swift in Sources */,
 				0F7568CA209974A800F82ACA /* RoundedButtonNoBorder.swift in Sources */,
+				0F0A1DAC20A17ABF00E11FF8 /* TranslationController.swift in Sources */,
+				0F0A1DA820A16E8C00E11FF8 /* TabBarViewController.swift in Sources */,
 				0F54EBC820964584004E16DF /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,7 +21,7 @@ class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var langField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
-    let languages = ["English", "Spanish", "Korean", "Chinese", "Arabic"]
+    let languages = ["English", "Español", "한국어", "中文", "عربى"]
     
     var pickerView = UIPickerView()
     
@@ -43,6 +43,12 @@ class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.tabBarController?.tabBar.isHidden = true
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? TabBarLanguageController {
+            destination.lang = langField.text
+        }
+    }
+    
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -56,10 +62,11 @@ class LanguageController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        nextButton.isEnabled = true
         langField.text = languages[row]
         langField.resignFirstResponder()
-        
+        if (langField.text == "English" || langField.text == "한국어") {
+            nextButton.isEnabled = true
+        }
     }
     
     override func didReceiveMemoryWarning() {
