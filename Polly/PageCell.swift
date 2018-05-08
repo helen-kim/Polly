@@ -16,10 +16,13 @@ class PageCell: UICollectionViewCell {
             crashCourseImageView.image = UIImage(named: unwrappedPage.imageName)
             
             let attributedText = NSMutableAttributedString(string: unwrappedPage.titleText, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 24), NSAttributedStringKey.foregroundColor: UIColor.black])
-            
+            if attributedText.isEqual(to: NSAttributedString(string:"Course Completed!")){
+                descriptionTextView.textAlignment = .center
+            } else {
+            descriptionTextView.textAlignment = .left
+            }
             attributedText.append(NSAttributedString(string: "\n\n\n\(unwrappedPage.descriptionText)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18), NSAttributedStringKey.foregroundColor: UIColor.gray]))
             descriptionTextView.attributedText = attributedText
-            descriptionTextView.textAlignment = .left
         }
     }
     
