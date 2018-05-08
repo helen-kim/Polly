@@ -17,15 +17,6 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView?.backgroundColor = .white
-        collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
-        
-        collectionView?.isPagingEnabled = true
-        
-        // here's our entry point into our app
-        //        view.addSubview(crashCourseImageView)
-        view.addSubview(descriptionTextView)
-        
         setupBottomControls()
         
         setupLayout()
@@ -34,14 +25,31 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Hide the nav bar
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         
         let collectionView:UICollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellID")
-        self.view.addSubview(collectionView)
+        collectionView.backgroundColor = UIColor.white
+        collectionView.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
+        collectionView.isPagingEnabled = true
+        view.addSubview(collectionView)
+        
+    }
+    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        
+//        // Show the Navigation Bar
+//        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -145,6 +153,9 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         
         topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
         
+       
+        view.addSubview(descriptionTextView)
+
         descriptionTextView.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor).isActive = true
         descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
         descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
