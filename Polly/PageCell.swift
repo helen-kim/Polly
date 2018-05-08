@@ -9,6 +9,20 @@ import UIKit
 
 class PageCell: UICollectionViewCell {
     
+    var page: Page? {
+        didSet {
+            guard let unwrappedPage = page else { return }
+            
+            crashCourseImageView.image = UIImage(named: unwrappedPage.imageName)
+            
+            let attributedText = NSMutableAttributedString(string: unwrappedPage.titleText, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 24)])
+            
+            attributedText.append(NSAttributedString(string: "\n\n\n\(unwrappedPage.descriptionText)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18), NSAttributedStringKey.foregroundColor: UIColor.gray]))
+            descriptionTextView.attributedText = attributedText
+            descriptionTextView.textAlignment = .center
+        }
+    }
+    
     let crashCourseImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +63,7 @@ class PageCell: UICollectionViewCell {
         topImageContainerView.addSubview(crashCourseImageView)
         crashCourseImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
         crashCourseImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
-        crashCourseImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 1).isActive = true
+        crashCourseImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.85).isActive = true
         
         topImageContainerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.5).isActive = true
         

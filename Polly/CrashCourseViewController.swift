@@ -14,9 +14,13 @@ extension UIColor {
 
 class CrashCourseViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    let imageNames = ["capstone v1-1", "capstone v1-2", "capstone v1-3", "capstone v1-4", "capstone v1-5"]
-    let titleStrings = ["addition", "cohesion", "editorialization", "false fluency", "omission"]
-    let descriptionStrings = ["An addition error occurs when the interpreter introduces superfluous information or translates with added stylistic effects.", "A cohesion error occurs when the interpretation is hard to follow because of inconsistent use of terminology, misuse of pronouns, inappropriate conjunctions, or other structural errors.", "An editorialization error occurs when the interpreter’s personal view is added to the translation.", "A false fluency error occurs when the interpreter uses words or phrases that are incorrect or nonexistent in a particular language. This can include words that appear similar but actually have dissimilar meaning in different languages.", "An omission error occurs when the interpreter does not fully translate or substitutes words or phrases during translation."]
+    let pages = [
+        Page(imageName: "capstone v1-1", titleText: "addition", descriptionText: "An addition error occurs when the interpreter introduces superfluous information or translates with added stylistic effects."),
+        Page(imageName: "capstone v1-2", titleText: "cohesion", descriptionText: "A cohesion error occurs when the interpretation is hard to follow because of inconsistent use of terminology, misuse of pronouns, inappropriate conjunctions, or other structural errors."),
+        Page(imageName: "capstone v1-3", titleText: "editorialization", descriptionText: "An editorialization error occurs when the interpreter’s personal view is added to the translation."),
+        Page(imageName: "capstone v1-4", titleText: "false fluency", descriptionText: "A false fluency error occurs when the interpreter uses words or phrases that are incorrect or nonexistent in a particular language. This can include words that appear similar but actually have dissimilar meaning in different languages."),
+        Page(imageName: "capstone v1-5", titleText: "omission", descriptionText: "An omission error occurs when the interpreter does not fully translate or substitutes words or phrases during translation.")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +61,7 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageNames.count
+        return pages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -65,11 +69,16 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         // dequeue and cast as PageCell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! PageCell
         
-        let imageName = imageNames[indexPath.item]
-        cell.crashCourseImageView.image = UIImage(named: imageName)
-        let attributedTitle = NSMutableAttributedString(string: titleStrings[indexPath.item], attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
-        cell.descriptionTextView.attributedText = attributedTitle
+//        let imageName = imageNames[indexPath.item]
+//        cell.crashCourseImageView.image = UIImage(named: imageName)
+//        let attributedTitle = NSMutableAttributedString(string: titleStrings[indexPath.item], attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
+//        cell.descriptionTextView.attributedText = attributedTitle
+
+        let page = pages[indexPath.item]
+        cell.page = page
         
+//        cell.crashCourseImageView.image = UIImage(named: page.imageName)
+//        cell.descriptionTextView.text = page.titleText
         return cell
     }
     
@@ -77,28 +86,28 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         return CGSize(width: view.frame.width, height: view.frame.height)
     }
     
-    let crashCourseImageView: UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
-        // this enables autolayout for our imageView
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-    
-    let descriptionTextView: UITextView = {
-        let textView = UITextView()
-        
-        let attributedText = NSMutableAttributedString(string: "Join us today in our fun and games!", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
-        
-        attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
-        
-        textView.attributedText = attributedText
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.textAlignment = .center
-        textView.isEditable = false
-        textView.isScrollEnabled = false
-        return textView
-    }()
+//    let crashCourseImageView: UIImageView = {
+//        let imageView = UIImageView(image: #imageLiteral(resourceName: "capstone v1-1"))
+//        // this enables autolayout for our imageView
+//        imageView.translatesAutoresizingMaskIntoConstraints = false
+//        imageView.contentMode = .scaleAspectFit
+//        return imageView
+//    }()
+//
+//    let descriptionTextView: UITextView = {
+//        let textView = UITextView()
+//
+//        let attributedText = NSMutableAttributedString(string: "Join us today in our fun and games!", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
+//
+//        attributedText.append(NSAttributedString(string: "\n\n\nAre you ready for loads and loads of fun? Don't wait any longer! We hope to see you in our stores soon.", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
+//
+//        textView.attributedText = attributedText
+//        textView.translatesAutoresizingMaskIntoConstraints = false
+//        textView.textAlignment = .center
+//        textView.isEditable = false
+//        textView.isScrollEnabled = false
+//        return textView
+//    }()
     
     // make sure you apply the correct encapsulation principles in your classes
     private let previousButton: UIButton = {
@@ -145,34 +154,6 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
             bottomControlsStackView.heightAnchor.constraint(equalToConstant: 50)
             ])
     }
-    
-//    private func setupLayout() {
-//        let topImageContainerView = UIView()
-//        //        topImageContainerView.backgroundColor = .blue
-//        view.addSubview(topImageContainerView)
-//        //enable auto layout
-//        topImageContainerView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        topImageContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-//
-//        topImageContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-//        topImageContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-//
-//        topImageContainerView.addSubview(crashCourseImageView)
-//        crashCourseImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
-//        crashCourseImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
-//        crashCourseImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 1).isActive = true
-//
-//        topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
-//
-//
-//        view.addSubview(descriptionTextView)
-//
-//        descriptionTextView.topAnchor.constraint(equalTo: topImageContainerView.bottomAnchor).isActive = true
-//        descriptionTextView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
-//        descriptionTextView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
-//        descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-//    }
 
     /*
     // MARK: - Navigation
