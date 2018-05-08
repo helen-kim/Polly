@@ -15,7 +15,8 @@ extension UIColor {
 class CrashCourseViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     let imageNames = ["capstone v1-1", "capstone v1-2", "capstone v1-3", "capstone v1-4", "capstone v1-5"]
-    
+    let titleStrings = ["addition", "cohesion", "editorialization", "false fluency", "omission"]
+    let descriptionStrings = ["An addition error occurs when the interpreter introduces superfluous information or translates with added stylistic effects.", "A cohesion error occurs when the interpretation is hard to follow because of inconsistent use of terminology, misuse of pronouns, inappropriate conjunctions, or other structural errors.", "An editorialization error occurs when the interpreter’s personal view is added to the translation.", "A false fluency error occurs when the interpreter uses words or phrases that are incorrect or nonexistent in a particular language. This can include words that appear similar but actually have dissimilar meaning in different languages.", "An omission error occurs when the interpreter does not fully translate or substitutes words or phrases during translation."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +67,8 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         
         let imageName = imageNames[indexPath.item]
         cell.crashCourseImageView.image = UIImage(named: imageName)
+        let attributedTitle = NSMutableAttributedString(string: titleStrings[indexPath.item], attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
+        cell.descriptionTextView.attributedText = attributedTitle
         
         return cell
     }
