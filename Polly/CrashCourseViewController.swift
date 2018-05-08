@@ -18,11 +18,12 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
     @IBOutlet weak var navtitle: UINavigationItem!
     
     var pages = [
-        Page(imageName: "capstone v1-1", titleText: "addition", descriptionText: "An addition error occurs when the interpreter introduces superfluous information or translates with added stylistic effects."),
-        Page(imageName: "capstone v1-5", titleText: "cohesion", descriptionText: "A cohesion error occurs when the interpretation is hard to follow because of inconsistent use of terminology, misuse of pronouns, inappropriate conjunctions, or other structural errors."),
-        Page(imageName: "capstone v1-4", titleText: "editorialization", descriptionText: "An editorialization error occurs when the interpreter’s personal view is added to the translation."),
-        Page(imageName: "capstone v1-2", titleText: "false fluency", descriptionText: "A false fluency error occurs when the interpreter uses words or phrases that are incorrect or nonexistent in a particular language. This can include words that appear similar but actually have dissimilar meaning in different languages."),
-        Page(imageName: "capstone v1-3", titleText: "omission", descriptionText: "An omission error occurs when the interpreter does not fully translate or substitutes words or phrases during translation.")
+        Page(imageName: "capstone v1-1", titleText: "Addition", descriptionText: "An addition error occurs when the interpreter introduces superfluous information or translates with added stylistic effects."),
+        Page(imageName: "capstone v1-5", titleText: "Cohesion", descriptionText: "A cohesion error occurs when the interpretation is hard to follow because of inconsistent use of terminology, misuse of pronouns, inappropriate conjunctions, or other structural errors."),
+        Page(imageName: "capstone v1-4", titleText: "Editorialization", descriptionText: "An editorialization error occurs when the interpreter’s personal view is added to the translation."),
+        Page(imageName: "capstone v1-2", titleText: "False Fluency", descriptionText: "A false fluency error occurs when the interpreter uses words or phrases that are incorrect or nonexistent in a particular language. This can include words that appear similar but actually have dissimilar meaning in different languages."),
+        Page(imageName: "capstone v1-3", titleText: "Omission", descriptionText: "An omission error occurs when the interpreter does not fully translate or substitutes words or phrases during translation."),
+        Page(imageName: "completed_course", titleText: "Course Complete!", descriptionText: "You've completed the POLLY Interpretation 101 course.")
     ]
     
     override func viewDidLoad() {
