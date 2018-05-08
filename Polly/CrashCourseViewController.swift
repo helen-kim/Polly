@@ -14,6 +14,9 @@ extension UIColor {
 
 class CrashCourseViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    let imageNames = ["capstone v1-1", "capstone v1-2", "capstone v1-3", "capstone v1-4", "capstone v1-5"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,11 +56,17 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return imageNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        
+        // dequeue and cast as PageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! PageCell
+        
+        let imageName = imageNames[indexPath.item]
+        cell.crashCourseImageView.image = UIImage(named: imageName)
+        
         return cell
     }
     
@@ -149,7 +158,7 @@ class CrashCourseViewController: UIViewController, UICollectionViewDataSource, U
         topImageContainerView.addSubview(crashCourseImageView)
         crashCourseImageView.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor).isActive = true
         crashCourseImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
-        crashCourseImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.5).isActive = true
+        crashCourseImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.8).isActive = true
         
         topImageContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
         
